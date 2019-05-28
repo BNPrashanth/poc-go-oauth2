@@ -14,6 +14,7 @@ const IndexPage = `
 			Login with the following,
 		</p>
 		<ul>
+			<li><a href="/login-gl">Google</a></li>
 			<li><a href="/login-fb">Facebook</a></li>
 		</ul>
 	</body>
