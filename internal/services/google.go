@@ -4,7 +4,6 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/gs-open-provider/poc-go-oauth2/internal/logger"
 
@@ -37,21 +36,7 @@ func InitializeOAuthGoogle() {
 HandleGoogleLogin Function
 */
 func HandleGoogleLogin(w http.ResponseWriter, r *http.Request) {
-	URL, err := url.Parse(oauthConfGl.Endpoint.AuthURL)
-	if err != nil {
-		logger.Log.Error("Parse: " + err.Error())
-	}
-	logger.Log.Info(URL.String())
-	parameters := url.Values{}
-	parameters.Add("client_id", oauthConfGl.ClientID)
-	parameters.Add("scope", strings.Join(oauthConfGl.Scopes, " "))
-	parameters.Add("redirect_uri", oauthConfGl.RedirectURL)
-	parameters.Add("response_type", "code")
-	parameters.Add("state", oauthStateStringGl)
-	URL.RawQuery = parameters.Encode()
-	url := URL.String()
-	logger.Log.Info(url)
-	http.Redirect(w, r, url, http.StatusTemporaryRedirect)
+	HandleLogin(w, r, oauthConfGl, oauthStateStringGl)
 }
 
 /*
