@@ -2,6 +2,9 @@ port: 9090
 logger-output-path: "path to log file"
 
 oauthStateString: "thisshouldberandom"
+google:
+  clientID: "google client id"
+  clientSecret: "google client secret"
 facebook:
   clientID: "facebook client id"
-  clentSecret: "facebook client secret"
+  clientSecret: "facebook client secret"

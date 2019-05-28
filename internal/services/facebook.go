@@ -29,7 +29,7 @@ InitializeOAuthFacebook Function
 */
 func InitializeOAuthFacebook() {
 	oauthConfFb.ClientID = viper.GetString("facebook.clientID")
-	oauthConfFb.ClientSecret = viper.GetString("facebook.clentSecret")
+	oauthConfFb.ClientSecret = viper.GetString("facebook.clientSecret")
 	oauthStateStringFb = viper.GetString("oauthStateString")
 }
 
