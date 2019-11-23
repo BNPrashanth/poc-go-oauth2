@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/gs-open-provider/poc-go-oauth2/internal/configs"
-	"github.com/gs-open-provider/poc-go-oauth2/internal/logger"
-	"github.com/gs-open-provider/poc-go-oauth2/internal/services"
+	"github.com/BNPrashanth/poc-go-oauth2/internal/configs"
+	"github.com/BNPrashanth/poc-go-oauth2/internal/logger"
+	"github.com/BNPrashanth/poc-go-oauth2/internal/services"
 
 	"github.com/spf13/viper"
 )

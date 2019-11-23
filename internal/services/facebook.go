@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/gs-open-provider/poc-go-oauth2/internal/logger"
+	"github.com/BNPrashanth/poc-go-oauth2/internal/logger"
 
 	"github.com/spf13/viper"
 	"golang.org/x/oauth2"
