@@ -5,6 +5,3 @@ oauthStateString: "thisshouldberandom"
 google:
   clientID: "google client id"
   clientSecret: "google client secret"
-facebook:
-  clientID: "facebook client id"
-  clientSecret: "facebook client secret"
